@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <div class="text-wrapper">
+        <h1 class="main__title">Learn to code by watching others</h1>
+        <p class="main__description">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+
+      <form action="" class="main__form">
+        <input
+          type="text"
+          class="form__first-name form-input"
+          placeholder="First Name"
+          data-index="0"
+        />
+        <span class="error" data-status="hidden"
+          >First name cannot be empty</span
+        >
+
+        <input
+          type="text"
+          class="form__last-name form-input"
+          placeholder="Last Name"
+          data-index="1"
+        />
+        <span class="error" data-status="hidden"
+          >Last name cannot be empty</span
+        >
+
+        <input
+          type="text"
+          class="form__email form-input"
+          placeholder="Email"
+          data-index="2"
+        />
+        <span class="error" data-status="hidden"
+          >Looks like this is not an email</span
+        >
+
+        <input
+          type="text"
+          class="form__password form-input"
+          placeholder="Password"
+          data-index="3"
+        />
+        <span class="error" data-status="hidden">Password cannot be empty</span>
+
+        <a href="#" class="form__try-btn btn">
+          <span>Try it free 7 days </span>then $20/mo. thereafter
+        </a>
+        <a href="#" class="form__claim-btn btn">Claim your free trial</a>
+        <p class="form__footer">
+          By clicking the button, you are agreeing to our
+          <span class="footer__terms">Terms and Services</span>
+        </p>
+      </form>
+    </section>
+
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer> -->
+  </body>
+</html>
